@@ -1,0 +1,18 @@
+@(exposes : ArrayList[ExposeModel])
+
+@main("#-----> ImmoScraper <-----#"){
+
+    <h1> all Exposes should be here --> </h1>
+
+    @for(expose <- exposes){
+
+        <a href="@expose.link">@expose.link</a>
+        <p> </p>
+        <p>Preis : @expose.price</p>
+        <p>Rooms : @expose.rooms</p>
+        <p>LivingSpace : @expose.squareMeter</p>
+        
+        <p> </p>
+        <p> </p>
+    }
+}
